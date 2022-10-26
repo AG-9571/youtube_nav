@@ -1,0 +1,46 @@
+body {
+  background-color: #212121;
+}
+section.nav {
+  max-width: 1600px;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  color: aliceblue;
+}
+section.nav nav {
+  display: grid;
+  border: whitesmoke solid 1px;
+  justify-content: center;
+  align-content: center;
+  width: 500px;
+  height: 200px;
+  padding: 5%;
+  gap: 5px;
+}
+section.nav nav i {
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+}
+section.nav nav i img.logo {
+  height: auto;
+  width: 80px;
+}
+section.nav nav i .icon {
+  font-size: 22px;
+}
+section.nav nav.navResponsive {
+  display: none;
+}
+h2 {
+  font-size: 22px;
+}
+.menu {
+  background: red;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
