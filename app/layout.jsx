@@ -6,11 +6,11 @@ export default function RootLayout({ children }) {
       <head>
         <title>Youtube Nav</title>
       </head>
-      <body>
+      <body className=" max-w-screen-2xl px-5">
         {
-        children
+          children
         }
-        </body>
+      </body>
     </html>
   )
 }
