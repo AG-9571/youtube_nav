@@ -14,25 +14,29 @@ import { Principal, Short, Suscription, Library, NavMovil, Logo, SearchIcon,
 export const NavigationPrincipal =  () =>
 {
     return(
-        <nav className='w-full h-80 bg-purple grid grid-rows-2 gap-1 gap-y-2 2xl:w-0.5 '>
-            <div className=''>
+        <nav className='w-full h-80 text-xs text-white grid-cols-3  grid grid-rows-4 justify-center gap-1 gap-y-2 2xl:w-0.5 '>
+            <div className=' grid justify-center col-start-1 col-end-3 '>
                 <Principal
                     className="text-white"
                 />
-                <p className=' text-center' >Principal</p>
+                <p className=' text-center ' >Principal</p>
             </div>
-            <div className='bg-silver'>
+            <div className=' row-start-2 col-start-1 col-end-3'>
                 <Short
                     className="text-white"
                 />
                 <p className=' text-center' >Principal</p>
             </div>
-            <div>
-                <Suscription />
+            <div className='row-start-3 col-start-1 col-end-3'>
+                <Suscription
+                    className="text-white"
+                />
                 <p className=' text-center' >Principal</p>
             </div>
-            <div>
-                <Library />
+            <div className='row-start-4 col-start-1 col-end-3'>
+                <Library 
+                    className="text-white"
+                />
                 <p className=' text-center' >Principal</p>            
 
             </div>
@@ -43,12 +47,12 @@ export const Header = () =>
 {
     return(
         <header className={` grid grid-cols-12 w-full items-center py-2 h-10  `}>
-            <div className={` col-start-1 col-end-3 grid grid-cols-11 items-center w-full `}>
+            <div className={` col-start-1 col-end-3 pl-1 grid grid-cols-11 items-center w-full `}>
                 <NavMovil 
-                    className='text-white col-start-1 col-end-4 pe-2'
+                    className='text-white col-start-1 px-2  col-end-4 pe-2 hover:bg-purple rounded-full p-1'
                 />
                 <Logo
-                    className='col-start-4 col-end-9'
+                    className='col-start-5 col-end-9'
                 />
             </div>
             <Search />
@@ -64,7 +68,7 @@ export const Search = ({
     return(
         <div className=' grid grid-cols-7 gap-5 justify-center w-ful  col-start-3 col-end-11 '>
             <div className={`w-full col-start-2 col-end-6  grid grid-cols-8 ${className}`} >
-                <input type="text" placeholder='Buscar' className=' col-start-1 col-end-8 px-4 py-1 w-full  bg-gray-200 rounded-s-3xl sm:hidden lg:block' />
+                <input type="text" placeholder='Buscar Musica ...' className=' col-start-1 col-end-8 px-4 py-1 w-full  bg-gray-200 rounded-s-3xl sm:hidden lg:block' />
                     <SearchIcon
                         dir="rtl"
                         className='bg-purple w-full rounded-s-3xl'
@@ -81,14 +85,14 @@ export const NavIconsProfile = () =>
 {
     return(
         <div className=' col-start-11 col-end-13 grid grid-cols-5  gap-7 w-full'>
-            <div className='rounded-full h-10 w-10 py-2 px-2 col-start-2  '>
+            <div className='rounded-full h-12 w-12 py-2 px-2 col-start-2  '>
                 <CreateIcon />
             </div>
-            <div className='rounded-full py-2 px-2 h-10 w-10'>
+            <div className='rounded-full py-2 px-2 h-12 w-12'>
                 <NotificationIcon />
             </div>
-            <div className=' rounded-full py-2 px-2 h-10 w-10'>
-                <MicrophoneIcon />
+            <div className=' rounded-full py-2 px-2 h-12 w-12'>
+                <img className=' rounded-3xl h-full w-full' src="https://yt3.ggpht.com/yti/AOXPAcUFzh8-05yaqk37IGGSkdUU5uXBgeMGXcN_aA=s88-c-k-c0x00ffffff-no-rj-mo" alt="" />
             </div>  
         </div>
     )

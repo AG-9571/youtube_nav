@@ -2,7 +2,6 @@
 // Filename: page.jsx
 // Code: ReactJS
 // Function: Home
-"use client"
 import React from 'react';
 import { NavigationPrincipal, Header, Image } from './components/Components';
 

@@ -1,14 +1,13 @@
 /* Iconos de la aplicacion */
 import React from 'react';
 import { Geticon } from './libs'; // importamos el componente Geticon
-"use client"
 
 // icons principal
 export const Principal = ()=>{
     return(
         <Geticon
             classI={"bg-red-500 text-white"}
-            style={{wdth: "100%", height: "40px", fill: "currentcolor"}}
+            style={{wdth: "100%", height: "30px", fill: "currentcolor"}}
         >
             <g>
                 <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
@@ -59,7 +58,7 @@ export const NavMovil = ({
     return(
         <Geticon
             classI={className}
-            style={{height: "25px" }}            
+            style={{height: "40px ", width: "40px" }}            
         >
             <g>
 
